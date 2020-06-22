@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelTitleProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="55dp"
+        android:text="@string/textTitle"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/labelName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/textName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextName"
+        app:layout_constraintStart_toStartOf="@+id/TextName"
+        app:layout_constraintTop_toBottomOf="@+id/labelTitleProfil" />
+
+    <EditText
+        android:id="@+id/TextName"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/labelAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelName" />
+
+    <TextView
+        android:id="@+id/labelAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/labelAge"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textAge"
+        app:layout_constraintStart_toStartOf="@+id/textAge"
+        app:layout_constraintTop_toBottomOf="@+id/TextName" />
+
+    <EditText
+        android:id="@+id/textAge"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveProfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelAge" />
+
+    <Button
+        android:id="@+id/btnSaveProfil"
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="btnSave"
+        android:text="@string/btnSave"
+        app:layout_constraintBottom_toTopOf="@+id/btnFitnesAusProfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAge" />
+
+    <Button
+        android:id="@+id/btnFitnesAusProfil"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="btnFitnes"
+        android:text="@string/btnFitnes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPresAusProfil"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaveProfil" />
+
+    <Button
+        android:id="@+id/btnPresAusProfil"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="btnPres"
+        android:text="@string/btnPres"
+        app:layout_constraintEnd_toStartOf="@+id/btnFitnesAusProfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnFitnesAusProfil" />
+
+    <TextView
+        android:id="@+id/profilView"
+        android:layout_width="294dp"
+        android:layout_height="84dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaveProfil"
+        app:layout_constraintVertical_bias="0.148" />
+</androidx.constraintlayout.widget.ConstraintLayout>

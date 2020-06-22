@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">МОНИТОРИНГ ЗДОРОВЬЯ</string>
+    <string name="textTitle">Профиль пациента</string>
+    <string name="textName">Фамилия, Имя, Отчество</string>
+    <string name="btnSave">СОХРАНИТЬ</string>
+    <string name="labelAge">Возраст (полных лет)</string>
+    <string name="btnPres">Параметры давления</string>
+    <string name="btnFitnes">Фитнес параметры</string>
+    <string name="textTitlePres">Параметры давления</string>
+    <string name="textTitleFitnes">Фитнес параметры</string>
+    <string name="labelPresUp">Верхнее давление</string>
+    <string name="labelPresDown">Нижнее давление</string>
+    <string name="btnProfil">ПРОФИЛЬ</string>
+    <string name="labelPulse">Пульс</string>
+    <string name="labelTahikard">Тахикардия</string>
+    <string name="labelWeight">Вес</string>
+    <string name="labelStep">Количество шагов за день</string>
+    <string name="tostAge">Неверный формат данных</string>
+    <string name="tostStep">Неверный формат данных</string>
+</resources>
